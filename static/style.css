@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     display: flex;
-    margin-top: 65px;
+    padding-left: 15px;
     font-size: 20px;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .list li a:hover {
-    color: brown;
+    color: rgb(83, 55, 7);
 }
 header {
     display: flex;
@@ -31,6 +31,49 @@ header {
     height: 150px;
     border-radius: 50px;
     margin-right: 50px;
+
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between; /* Ensures space between the nav and the search bar */
+    align-items: center;
+    background-color: #dfc29f;
+    height: 75px;
+    border-radius: 50px;
+    margin-top: 30px;
+    width: 1000PX;
+}
+.navbar form {
+    padding-right: 15px;
+}
+.navbar form button {
+    background-color: rgb(87, 48, 1);
+    color: white;
+    border-width: 0px;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
     
-    
+}
+.navbar form input {
+    background-color: #d4af7c;
+    border-width: 0px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.items {
+    display: flex; /* Aligns items in a row */
+    justify-content: space-around; /* Adds space between items */
+    flex-wrap: wrap; /* Allows wrapping to next line if screen is small */
+}
+.items div {
+    border: 2px solid #000; /* Adds a border around each div */
+    padding: 15px; /* Adds padding inside the border */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    text-align: center; /* Centers the text */
+    width: 150px; /* Sets a fixed width for the boxes */
+    margin: 10px; /* Adds space around each box */
+    padding-left: 500px;
+    height: 200px;
 }

@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>
+        {% block title%}
+        
+        {% endblock%}
+    </title>
+   
 </head>
 <body>
+    <header>
+        <div class="imageP">
+            <img src="../static/images/MSF.jpg" alt="logo">
+        </div>
+        <div class="navbar-container">
+            <div class="navbar">
+                <ul class="list">
+                    <li><a href="{{ url_for('home')}}">Home</a></li>
+                    <li><a href="{{ url_for('About')}}">About</a></li>
+                    <li><a href="{{ url_for('Signin')}}">SignIn</a></li>
+                    <li><a href="{{ url_for('order')}}" target="_blank">PlaceOrder</a></li>
+                </ul>
+            </div>
+            <div class="navbar">
+                <form action="/search" method="get">
+                    <input type="search" name="query" placeholder="Search...">
+                    <button type="submit">Search</button>
+    
+                </form>
+            </div>
+            
+        </div>
+           
+    </header>
     {% block content%}
 
     {% endblock %}

@@ -14,6 +14,10 @@ def About():
 def Signin():
     return render_template('Signin.html')
 
+@app.route('/order')
+def order():
+    return render_template('order.html')
+
 
 if __name__=="__main__":
     

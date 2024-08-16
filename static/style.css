@@ -74,6 +74,27 @@ header {
     text-align: center; /* Centers the text */
     width: 150px; /* Sets a fixed width for the boxes */
     margin: 10px; /* Adds space around each box */
-    padding-left: 500px;
+    
     height: 200px;
+    margin-bottom: 100px;
+}
+.kota img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+.chips img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;    
+}
+.archaar img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+.plate img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
 }

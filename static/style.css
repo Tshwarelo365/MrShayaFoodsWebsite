@@ -74,14 +74,16 @@ header {
     text-align: center; /* Centers the text */
     width: 150px; /* Sets a fixed width for the boxes */
     margin: 10px; /* Adds space around each box */
-    
-    height: 200px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 260px;
     margin-bottom: 100px;
 }
 .kota img {
     max-width: 100%;
     height: auto;
-    margin-top: 10px;
+    
+    
 }
 .chips img {
     max-width: 100%;
@@ -97,4 +99,12 @@ header {
     max-width: 100%;
     height: auto;
     margin-top: 10px;
+}
+.items div button {
+    background-color: rgb(234, 223, 0);
+    border-width: 0px;
+    height: 30px;
+    width: 60px;
+    border-radius: 10px;
+    text-shadow: #000;
 }
